@@ -13,23 +13,25 @@
 			<section id="header">
 
 				<!-- Logo -->
-					<h1><a href="../index.html">Achraf El Khamsi</a></h1>
+					<h1><a href="index.html">Achraf El Khamsi</a></h1>
 
 				<!-- Nav -->
 				<nav id="nav">
 					<ul>
-						<li><a href="../index.html">Home</a></li>
+						<li><a href="index.html">Home</a></li>
 						<li class="current">
 							<a href="#">Projects</a>
 							<ul>
 								<li><a href="reversi-ai.html">Reversi AI</a></li>
 								<li><a href="sync.html">Sync</a></li>
-								<li><a href="compiler.html">Compiler</a></li>
-								<li><a href="arcade.html">Arcade</a></li>
+								<li><a href="compiler.html">Compiler / Interpreter</a></li>
+								<li><a href="hands-on.html">Hands On</a></li>
+								<li><a href="arcade.html">The Arcade Playground</a></li>
 								<li><a href="battle-of-wits.html">Battle of Wits</a></li>
 							</ul>
 						</li>
 						<li><a href="#footer">Contact</a></li>
+						<li><a href="https://documentcloud.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3A11aea02d-6e28-44ba-a4c2-80465fd89757"><i class="far fa-file" style="margin-right:5px"></i> Resume</a></li>
 					</ul>
 				</nav>
 				
@@ -42,41 +44,36 @@
 						<!-- Content -->
 							<article class="box post">
 								<!-- <a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a> -->
-								<h2 style="margin-bottom: 20px">Battle of Wits</h2>
+								<h2 style="margin-bottom: 20px">Sync</h2>
 								<section>
 									<header>
 										<h3>Description</h3>
 									</header>
 									<p>
-										This project is a round by round card game that runs in the console. It's a Computer vs Computer game. The user chooses the number of players and starts the game. Only one of the players will be victorious.
+										Sync is a real-time online video synchronization platform. Its purpose is to enable people to watch videos together simultaneously while being distant.
+										For the first version of this application, only Youtube videos will be suported, but it can defenitly scale to cover any video platform.
 									</p>
 									<p>
-										Several versions of the game exist:
-										<ul>
-											<li>
-												<b>Version 0</b> : it's the base version of the game. Each player have a hand of 5 cards and plays 1 card then draw a card from his deck. We suppose that the deck is limitless. Each card have a degree of power which is inversely proportional to the likelihood of drawing it from the deck. Each card have effects: it can remove life points from an opponent or increase the life points of the one who played it.
-											</li>
-											<li>
-												<b>Version 1</b> : In this version, we enhance the Version 0 by using a doubly linked queue to manage the deck and the hand of the player.
-											</li>
-											<li>
-												<b>Version 2</b> : In this version, We add an arena where the players will occupy a place throughout the game. After playing a card, each player will move by a defined number of steps. We also introduce new cards that can create impassable walls on the arena. If a player is trapped between four walls, he dies.
-											</li>
-											<li>
-												<b>Version 3</b> : In this version, We add new cards that enable a player to create clones of himself and put them in the arena. Each round, these clones will attack their parent's opponents.
-											</li>
-										</ul>
+										The application relies on web sockets. A socket is created for every client that connects to the server. He can then enter a room or create one. All users of the same room are affected by the same actions.
+										Thereby, the synchronization can be done by controlling the video player and calling the same functions for each socket in the room.
 									</p>
+									<p>
+										This application is a one person project, currently under development.
+									</p>
+
 								</section>
 								
 								
 								<section>
 									<header>
-										<h3>Languages used</h3>
+										<h3>Technologies and Algorithms used</h3>
 									</header>
 									
 									<ul>
-										<li>C</li>
+										<li>Angular 8</li>
+										<li>Node.js</li>
+										<li>Socket.io</li>
+										<li>Youtube Data API</li>
 									</ul>
 								</section>
 
@@ -86,10 +83,11 @@
 									</header>
 									
 									<ul class="social">
-										<li><a class="icon brands fa-github" href="https://www.github.com/aelkhamsi/BattleOfWits"><span class="label">Github</span></a></li>
+										<li><a class="icon brands fa-github" href="https://www.github.com/aelkhamsi/Sync"><span class="label">Github</span></a></li>
 									</ul>
 
 								</section>
+							</article>
 
 					</div>
 				</section>
