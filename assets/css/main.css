@@ -175,6 +175,10 @@ input, select, textarea {
 		margin-bottom: 2em;
 	}
 
+	p {
+		font-size: 1.2em;
+	}
+
 /* Container */
 
 	.container {
@@ -2070,6 +2074,7 @@ input, select, textarea {
 		border-bottom: solid 1px #ccc;
 		padding: 5em 0 4em 0;
 		text-align: center;
+		height: 300px;
 	}
 
 		#header h1 {
@@ -2919,3 +2924,4 @@ input, select, textarea {
 	.major {
 		margin-top: 100px;
 	}
+
