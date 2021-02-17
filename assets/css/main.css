@@ -2915,3 +2915,7 @@ input, select, textarea {
 	.synk {
 		width: 10%;
 	}
+
+	.major {
+		margin-top: 100px;
+	}
