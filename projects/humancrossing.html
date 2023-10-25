@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Dopetrope by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Achraf El Khamsi</title>
@@ -18,12 +13,12 @@
 			<section id="header">
 
 				<!-- Logo -->
-					<h1><a href="index.html">Achraf El Khamsi</a></h1>
+					<h1><a href="../index.html">Achraf El Khamsi</a></h1>
 
 				<!-- Nav -->
 				<nav id="nav">
 					<ul>
-						<li><a href="index.html">Home</a></li>
+						<li><a href="../index.html">Home</a></li>
 						<li class="current">
 							<a href="#">Projects</a>
 							<ul>
@@ -54,55 +49,50 @@
 						<!-- Content -->
 							<article class="box post">
 								<!-- <a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a> -->
-								<h2 style="margin-bottom: 20px">Compiler / Interpreter</h2>
+								<h2 style="margin-bottom: 20px">HumanCrossing.io</h2>
 								<section>
 									<header>
-										<h3>Introduction</h3>
+										<h3>Description</h3>
 									</header>
 									<p>
-										A <b>compiler</b> is a program that can read a program in one language - the source language - and translate it into an equivalent program in another language - the target language;
+										HumanCrossing is a application that <b>simulate real life</b>, see it as a virtual world. It gives you the ability to <b>control a character in a map</b>. 
+										When <b>people join the same map</b> and their characters are close enough to yours, a <b>video call start</b> between you. When you finish your conversation, you walk away from your interlocutor and the video call ends. Just like in real life!
 									</p>
 									<p>
-										An <b>interpreter</b> is another common kind of language processor. Instead of producing a target program as a translation, an interpreter appears to directly execute the operations specified in the source program on inputs supplied by the user
+										The application use sockets to create rooms (maps) and manage the game state. For video calls, it uses WebRTC add real-time communication capabilities with peer-to-peer connections.
 									</p>
 									<p>
-										There is two parts during the compilation: analysis and synthesis:
-										<ul>
-											<li><b>The analysis</b> part reads the stream of characters making up the source program and groups the characters into meaningful sequences (Lexical Analysis), then it imposes a grammatical structure on them (Semantic Analysis). It then uses this structure to create an intermediate representation of the source program. After syntax and semantic analysis of the source program, many compilers generate an explicit low-level or machine-like intermediate representation, which we can think of as a program for an abstract machine.</li>
-											<li><b>The synthesis</b> part constructs the desired target program from the intermediate representation.</li>
-										</ul>
+										This application is a one person project, <b>currently under development</b>. A first version of the application will be published in <b>February 2021</b>.<br/>
 									</p>
+									<p>
+										A small preview of the application:
+										<img src="../images/humancrossing-preview.png" width="1000px" />
+									</p>
+
 								</section>
 
 
 								<section>
 									<header>
-										<h3>Implemented Features</h3>
+										<h3>Technologies and Algorithms used</h3>
 									</header>
-									<p>
-										In this project, we've implemented the first part of the compilation, which is the Analysis phase until an intermediate representation of the source program is generated. The intermediate code is generated in the C language and maps the structure of an assembly source code (usage of registers and conditional or non conditional jumps, non-use of conditional structure (if else) or loop (for, while) ).</br>
-									</p>
-									<p>
-										The program can also be used as an interpreter. It executes the commands giver by the user without producing an intermediate code.
-									</p>
-								</section>
-								<section>
-									<header>
-										<h3>Languages used</h3>
-									</header>
+
 									<ul>
-										<li>C</li>
-										<li>Lex</li>
-										<li>YACC</li>
+										<li>Phaser 3 (Moteur de jeu)</li>
+										<li>Node.js</li>
+										<li>Socket.io</li>
+										<li>Peer.js (WebRTC)</li>
+										<li>Nginx</li>
 									</ul>
 								</section>
+
 								<section>
 									<header>
 										<h3>Links</h3>
 									</header>
 
 									<ul class="social">
-										<li><a class="icon brands fa-github" href="https://www.github.com/aelkhamsi/interpreter"><span class="label">Github</span></a></li>
+										<li><a class="icon brands fa-github" href="https://github.com/aelkhamsi/HumanCrossing.io"></a></li>
 									</ul>
 
 								</section>
@@ -124,16 +114,17 @@
 									<ul class="social">
 										<li><a class="icon brands fa-linkedin-in" href="https://www.linkedin.com/in/achrafelkhamsi"><span class="label">Linkedin</span></a></li>
 										<li><a class="icon brands fa-github" href="https://www.github.com/aelkhamsi"><span class="label">Github</span></a></li>
+                    <li><a class="icon brands fa-medium" href="https://achrafelkhamsi.medium.com/"><span class="label">Medium</span></a></li>
 									</ul>
 									<ul class="contact">
 										<li>
 											<h3>Mail</h3>
 											<p>achrafelkhamsi@gmail.com</p>
 										</li>
-										<li>
+										<!-- <li>
 											<h3>Phone</h3>
 											<p>(+33) 761 376 899</p>
-										</li>
+										</li> -->
 									</ul>
 								</section>
 							</div>

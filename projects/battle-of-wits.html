@@ -13,12 +13,12 @@
 			<section id="header">
 
 				<!-- Logo -->
-					<h1><a href="index.html">Achraf El Khamsi</a></h1>
+					<h1><a href="../index.html">Achraf El Khamsi</a></h1>
 
 				<!-- Nav -->
 				<nav id="nav">
 					<ul>
-						<li><a href="index.html">Home</a></li>
+						<li><a href="../index.html">Home</a></li>
 						<li class="current">
 							<a href="#">Projects</a>
 							<ul>
@@ -49,42 +49,41 @@
 						<!-- Content -->
 							<article class="box post">
 								<!-- <a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a> -->
-								<h2 style="margin-bottom: 20px">Synk.li</h2>
+								<h2 style="margin-bottom: 20px">Battle of Wits</h2>
 								<section>
 									<header>
 										<h3>Description</h3>
 									</header>
 									<p>
-										Synk.li is a <b>real-time online video synchronization platform</b>. Its purpose is to <b>enable people to watch videos together simultaneously</b> while being distant.
-										For the first version of this application, only Youtube videos will be suported, but it can defenitly scale to cover any video platform.
+										This project is a round by round card game that runs in the console. It's a Computer vs Computer game. The user chooses the number of players and starts the game. Only one of the players will be victorious.
 									</p>
 									<p>
-										The application relies on web sockets. A socket is created for every client that connects to the server. He can then enter a room or create one. All users of the same room are affected by the same actions.
-										Thereby, the synchronization can be done by controlling the video player and calling the same functions for each socket in the room.
+										Several versions of the game exist:
+										<ul>
+											<li>
+												<b>Version 0</b> : it's the base version of the game. Each player have a hand of 5 cards and plays 1 card then draw a card from his deck. We suppose that the deck is limitless. Each card have a degree of power which is inversely proportional to the likelihood of drawing it from the deck. Each card have effects: it can remove life points from an opponent or increase the life points of the one who played it.
+											</li>
+											<li>
+												<b>Version 1</b> : In this version, we enhance the Version 0 by using a doubly linked queue to manage the deck and the hand of the player.
+											</li>
+											<li>
+												<b>Version 2</b> : In this version, We add an arena where the players will occupy a place throughout the game. After playing a card, each player will move by a defined number of steps. We also introduce new cards that can create impassable walls on the arena. If a player is trapped between four walls, he dies.
+											</li>
+											<li>
+												<b>Version 3</b> : In this version, We add new cards that enable a player to create clones of himself and put them in the arena. Each round, these clones will attack their parent's opponents.
+											</li>
+										</ul>
 									</p>
-									<p>
-										This application is a one person project. The first version support Youtube Synchronization. <b>Other versions are in development</b>.
-									</p>
-
-									<p>
-										A small preview of the application:
-										<img src="images/synk-preview.png" width="1000px" />
-									</p>
-
 								</section>
 
 
 								<section>
 									<header>
-										<h3>Technologies and Algorithms used</h3>
+										<h3>Languages used</h3>
 									</header>
 
 									<ul>
-										<li>Angular 8</li>
-										<li>Node.js</li>
-										<li>Socket.io</li>
-										<li>Nginx</li>
-										<li>Youtube Data API</li>
+										<li>C</li>
 									</ul>
 								</section>
 
@@ -94,12 +93,10 @@
 									</header>
 
 									<ul class="social">
-										<a href="https://synk.li"> <img src="./images/sync.png" alt="Synk.li" class="synk"> </a>
-										<li><a class="icon brands fa-github" href="https://github.com/aelkhamsi/YoutubeSync"></a></li>
+										<li><a class="icon brands fa-github" href="https://www.github.com/aelkhamsi/BattleOfWits"><span class="label">Github</span></a></li>
 									</ul>
 
 								</section>
-							</article>
 
 					</div>
 				</section>
@@ -117,16 +114,17 @@
 									<ul class="social">
 										<li><a class="icon brands fa-linkedin-in" href="https://www.linkedin.com/in/achrafelkhamsi"><span class="label">Linkedin</span></a></li>
 										<li><a class="icon brands fa-github" href="https://www.github.com/aelkhamsi"><span class="label">Github</span></a></li>
+                    <li><a class="icon brands fa-medium" href="https://achrafelkhamsi.medium.com/"><span class="label">Medium</span></a></li>
 									</ul>
 									<ul class="contact">
 										<li>
 											<h3>Mail</h3>
 											<p>achrafelkhamsi@gmail.com</p>
 										</li>
-										<li>
+										<!-- <li>
 											<h3>Phone</h3>
 											<p>(+33) 761 376 899</p>
-										</li>
+										</li> -->
 									</ul>
 								</section>
 							</div>
